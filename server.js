@@ -16,3 +16,12 @@ botlistyetkili:"",
 botlistyetkiliaçık:"Kapalı",
 botlistgeliştiriciaçık:"Kapalı",
 botlistbotacik:"Kapalı"});
+
+bot.command({
+ name:"$alwaysExecute", 
+ code:`$deletecommand
+ $wait[6]
+$onlyForChannels[$getServerVar[başvurukanal];]
+$onlyIf[$hasPerms[$authorID;admin]==false;]
+$suppressErrors[]`,
+nonPrefixed:true})
