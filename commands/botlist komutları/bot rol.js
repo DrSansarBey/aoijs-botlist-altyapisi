@@ -15,4 +15,5 @@ $endif
   Bot onaylanınca bota verilecek rol sıfırlandı.
    $onlyBotPerms[manageroles;{title:HATA}{description:Rolleri yönet yetkim olmadığı için işlem yapamam!}{color:BLACK}]  
   $onlyPerms[admin;{title:HATA}{description:Bu komudu kullanmak için \`Yönetici\` yetkisine sahip olmalısın!}{color:BLACK}]
-$`})    
+$endif
+$argsCheck[>1;{title:HATA}{description:Lütfen $getServerVar[prefix]bot-rol ayarla/sıfırla yazınız.}{color:BLACK}]`})    
